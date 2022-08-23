@@ -11,8 +11,7 @@ class ArtistsProvider {
           id: 'jmo',
           name: 'Jessie Morrison',
           image: MyArtistImage(
-            image:
-                'assets/images/artists/Martin-Berube-Flat-Animal-Chihuahua.ico',
+            image: 'assets/images/artists/martin_chihuahua.jpg',
             sourceLink:
                 'https://iconarchive.com/show/flat-animal-icons-by-martin-berube.html',
             sourceName: 'Daniel Monteiro',
@@ -118,7 +117,7 @@ class ArtistsProvider {
           id: 'jonjames',
           name: 'Jon James',
           image: MyArtistImage(
-            image: 'assets/images/artists/Martin-Berube-Flat-Animal-Whale.ico',
+            image: 'assets/images/artists/martin_whale.jpg',
             sourceLink: 'https://unsplash.com/photos/k7UKO-tT5QU',
             sourceName: 'Natalie Runnerstrom',
           ),
