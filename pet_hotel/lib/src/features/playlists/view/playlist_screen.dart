@@ -25,7 +25,7 @@ class PlaylistScreen extends StatelessWidget {
         return Scaffold(
           appBar: AppBar(
             leading: BackButton(
-              onPressed: () => GoRouter.of(context).go('/playlists'),
+              onPressed: () => GoRouter.of(context).go('/medical_record'),
             ),
             title: Text(playlist.title),
             actions: [
@@ -52,7 +52,7 @@ class PlaylistScreen extends StatelessWidget {
           slivers: [
             SliverAppBar(
               leading: BackButton(
-                onPressed: () => GoRouter.of(context).go('/playlists'),
+                onPressed: () => GoRouter.of(context).go('/medical_record'),
               ),
               expandedHeight: headerHeight,
               pinned: false,
@@ -68,7 +68,7 @@ class PlaylistScreen extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Text(
-                        'PLAYLIST',
+                        'Medical record',
                         style: context.titleSmall!
                             .copyWith(color: colors.onSurface),
                       ),

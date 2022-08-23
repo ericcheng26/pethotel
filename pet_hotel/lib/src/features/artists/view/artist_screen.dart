@@ -23,9 +23,9 @@ class ArtistScreen extends StatelessWidget {
           child: Scaffold(
             appBar: AppBar(
               leading: BackButton(
-                onPressed: () => GoRouter.of(context).go('/artists'),
+                onPressed: () => GoRouter.of(context).go('/room_type'),
               ),
-              title: Text('ARTIST - ${artist.name}'),
+              title: Text('ROOM TYPE - ${artist.name}'),
               bottom: PreferredSize(
                 preferredSize: Size.fromHeight(kToolbarHeight + headerHeight),
                 child: Column(

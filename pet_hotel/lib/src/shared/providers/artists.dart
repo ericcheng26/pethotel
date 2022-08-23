@@ -11,8 +11,10 @@ class ArtistsProvider {
           id: 'jmo',
           name: 'Jessie Morrison',
           image: MyArtistImage(
-            image: 'assets/images/artists/woman.jpeg',
-            sourceLink: 'https://unsplash.com/photos/w8wpFqiMpW8',
+            image:
+                'assets/images/artists/Martin-Berube-Flat-Animal-Chihuahua.ico',
+            sourceLink:
+                'https://iconarchive.com/show/flat-animal-icons-by-martin-berube.html',
             sourceName: 'Daniel Monteiro',
           ),
           bio:
@@ -63,8 +65,9 @@ class ArtistsProvider {
           id: 'lb',
           name: 'Lucas Bryant',
           image: MyArtistImage(
-            image: 'assets/images/albums/artist1-album2.jpg',
-            sourceLink: 'https://unsplash.com/photos/6etHcucBiRg',
+            image: 'assets/images/albums/artist5-album2.jpg',
+            sourceLink:
+                'https://iconarchive.com/show/flat-animal-icons-by-martin-berube.html',
             sourceName: 'Keagan Henman',
           ),
           bio:
@@ -104,7 +107,7 @@ class ArtistsProvider {
               blurb:
                   'Calling all country music fans! Fasten your seat belts because the 2022 Best of Country Awards is expecting a huge performance from some of our favorite artists. Country music legends Mariam Lubbock and Jackson Murray will be joined by Lucas Bryant and Michelle Delaney for a performance we\'ll never forget.',
               image: MyArtistImage(
-                image: 'assets/images/albums/artist1-album2.jpg',
+                image: 'assets/images/albums/artist3-album1.jpg',
                 sourceLink: 'https://unsplash.com/photos/6etHcucBiRg',
                 sourceName: 'Keagan Henman',
               ),
@@ -115,7 +118,7 @@ class ArtistsProvider {
           id: 'jonjames',
           name: 'Jon James',
           image: MyArtistImage(
-            image: 'assets/images/artists/joe.jpg',
+            image: 'assets/images/artists/Martin-Berube-Flat-Animal-Whale.ico',
             sourceLink: 'https://unsplash.com/photos/k7UKO-tT5QU',
             sourceName: 'Natalie Runnerstrom',
           ),
