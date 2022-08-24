@@ -1,9 +1,0 @@
-return Card(
-            child: ListView(shrinkWrap: true, children: [
-              ListTile(
-                title: Text('content $index'),
-              ),
-            ]),
-            color: Colors.pinkAccent,
-          );
-        
