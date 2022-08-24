@@ -39,7 +39,7 @@ class _MyAppState extends State<MyApp> {
                       ThemeProvider.of(context); // Create theme instance
                   return MaterialApp.router(
                     debugShowCheckedModeBanner: false,
-                    title: 'Flutter Demo',
+                    title: 'Pet Hotel',
                     theme: theme.light(settings.value.sourceColor),
                     darkTheme: theme.dark(settings.value.sourceColor),
                     themeMode: theme.themeMode(),
