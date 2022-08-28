@@ -107,20 +107,6 @@ class _HomeScreenState extends State<HomeScreen> {
                   AdaptiveContainer(
                     columnSpan: 12,
                     child: Column(
-                      children: [
-                        const HomeHighlight(),
-                        LayoutBuilder(
-                          builder: (context, constraints) => HomeArtists(
-                            artists: artists,
-                            constraints: constraints,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  AdaptiveContainer(
-                    columnSpan: 12,
-                    child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Padding(
@@ -156,7 +142,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   padding: const EdgeInsets.only(
                                       left: 8, bottom: 8), // Modify this line
                                   child: Text(
-                                    'Top Trend Today',
+                                    'Classic Room',
                                     style: context.titleLarge,
                                   ),
                                 ),

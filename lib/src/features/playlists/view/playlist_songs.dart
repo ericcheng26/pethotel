@@ -29,12 +29,6 @@ class PlaylistSongs extends StatelessWidget {
         DataColumn(
           label: Text('Title'),
         ),
-        DataColumn(
-          label: Padding(
-            padding: EdgeInsets.only(right: 10),
-            child: Text('Length'),
-          ),
-        ),
       ],
       rowBuilder: (context, index) => DataRow.byIndex(
         index: index,
@@ -63,9 +57,6 @@ class PlaylistSongs extends StatelessWidget {
               Expanded(child: Text(playlist.songs[index].title)),
             ]),
           ),
-          DataCell(
-            Text(playlist.songs[index].length.toHumanizedString()),
-          ),
         ],
       ),
       itemBuilder: (song, index) {
@@ -75,7 +66,6 @@ class PlaylistSongs extends StatelessWidget {
           ),
           leading: ClippedImage(song.image.image),
           title: Text(song.title),
-          subtitle: Text(song.length.toHumanizedString()),
         );
       },
     );
