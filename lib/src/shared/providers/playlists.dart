@@ -34,8 +34,8 @@ class PlaylistsProvider {
               'https://www.bloomberg.com/news/articles/2019-03-29/new-york-hotel-openings-from-cheaper-high-design-to-ultra-luxury',
           sourceName: 'Karsten Winegeart'),
       const MyArtistImage(
-          image: 'assets/images/playlists/Blade-Runner-Bradbury-Building-3.jpg',
-          sourceLink: 'http://movie-locations.com/movies/b/Blade-Runner.php',
+          image: 'assets/images/playlists/image.jpg',
+          sourceLink: 'https://www.petparadise.com/cat-boarding.htm',
           sourceName: 'Jared Rice'),
       const MyArtistImage(
           image: 'assets/images/playlists/TimesSquare_LobbyBar_Terrace.jpg',
@@ -56,6 +56,16 @@ class PlaylistsProvider {
           image: 'assets/images/playlists/banquo_spa_hotel.jpg',
           sourceLink:
               'https://www.chillpainai.com/src/wewakeup/img_hotels/2759/1443863189-393833_13121114150017877775_resize.jpg',
+          sourceName: 'dimitri.photography'),
+      const MyArtistImage(
+          image: 'assets/images/playlists/best-dog-boarding-barkley.jpg',
+          sourceLink:
+              'https://www.elledecor.com/life-culture/g3494/best-dog-boarding/?slide=5',
+          sourceName: 'dimitri.photography'),
+      const MyArtistImage(
+          image: 'assets/images/playlists/exp-bedroom.jpg',
+          sourceLink:
+              'http://www.omkar1973.com/images/experience/exp-bedroom.jpg',
           sourceName: 'dimitri.photography'),
     ];
   }

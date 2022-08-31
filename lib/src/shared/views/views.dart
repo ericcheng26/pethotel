@@ -14,3 +14,4 @@ export 'root_layout.dart';
 export 'sidebar.dart';
 export 'shopping_bag.dart';
 export 'page_footer.dart';
+export 'carousel_slider.dart';
