@@ -2,8 +2,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart' as go;
-import 'package:footer/footer.dart';
-import 'package:footer/footer_view.dart';
 
 import '../playback/bloc/bloc.dart';
 import '../router.dart' as router;

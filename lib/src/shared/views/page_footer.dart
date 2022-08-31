@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:footer/footer.dart';
-import 'package:sticky_footer_scrollview/sticky_footer_scrollview.dart';
 
 class PageFooter extends StatefulWidget {
   const PageFooter({super.key});
