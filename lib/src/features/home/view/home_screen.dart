@@ -105,6 +105,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                   AdaptiveContainer(
+                      columnSpan: 12,
+                      child: CarouselViewr(playlists: playlists)),
+                  AdaptiveContainer(
                     columnSpan: 12,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -125,6 +128,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ],
                     ),
                   ),
+                  /*
                   AdaptiveContainer(
                     columnSpan: 12,
                     child: Padding(
@@ -185,7 +189,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ],
                       ),
                     ),
-                  ),
+                  ),*/
                 ],
               ),
               const PageFooter()
