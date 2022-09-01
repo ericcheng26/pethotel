@@ -19,13 +19,13 @@ class HomeHighlight extends StatelessWidget {
                 height: 275,
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(10),
-                  child: Image.network(
-                    'https://i.ebayimg.com/images/g/RgAAAOSwWxtgX0ha/s-l500.jpg',
+                  child: Image.asset(
+                    'assets/images/playlists/image.jpg',
                     fit: BoxFit.cover,
                   ),
                 ),
               ),
-              onTap: () => launchUrl(Uri.parse('https://xesla.xyz')),
+              onTap: () => launchUrl(Uri.parse('https://webapp.vettesla.com')),
             ),
           ),
         ),

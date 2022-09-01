@@ -29,7 +29,7 @@ dependencies:
   footer: ^0.0.4
   sticky_footer_scrollview: ^1.1.1
   carousel_slider: ^4.1.1
-  flutter_launcher_icons: ^0.10.0
+
 
 dev_dependencies:
   flutter_launcher_icons: "^0.10.0"
@@ -42,23 +42,23 @@ dev_dependencies:
 flutter_icons:
   android: "launcher_icon"
   ios: true
-  image_path: "assets/favicon.ico"
+  image_path: "assets/favicon.png"
   min_sdk_android: 21 # android min sdk min:16, default 21
   remove_alpha_ios: true
-  adaptive_icon_background: "assets/favicon.ico"
-  adaptive_icon_foreground: "assets/favicon.ico"
+  adaptive_icon_background: "assets/background_icon.png"
+  adaptive_icon_foreground: "assets/favicon.png"
   web:
     generate: true
-    image_path: "assets/favicon.ico"
+    image_path: "assets/favicon.png"
     background_color: "##d3d7db"
     theme_color: "#2196f3"
   windows:
     generate: true
-    image_path: "assets/favicon.ico"
+    image_path: "assets/favicon.png"
     icon_size: 256 # min:48, max:256, default: 48
   macos:
     generate: true
-    image_path: "assets/favicon.ico"
+    image_path: "assets/favicon.png"
 
 flutter:
   uses-material-design: true
