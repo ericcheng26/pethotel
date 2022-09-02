@@ -22,11 +22,11 @@ class PlaylistSongs extends StatelessWidget {
         DataColumn(
           label: Padding(
             padding: EdgeInsets.only(left: 20),
-            child: Text('#'),
+            child: Text('Rating'),
           ),
         ),
         DataColumn(
-          label: Text('Title'),
+          label: Text('Price'),
         ),
       ],
       rowBuilder: (context, index) => DataRow.byIndex(

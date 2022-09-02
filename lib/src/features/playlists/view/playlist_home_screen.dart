@@ -32,7 +32,7 @@ class _PlaylistHomeScreenState extends State<PlaylistHomeScreen> {
                       children: [
                         Expanded(
                           child: Text(
-                            'Medical record',
+                            'RoomType',
                             style: context.displaySmall,
                           ),
                         ),
@@ -57,7 +57,7 @@ class _PlaylistHomeScreenState extends State<PlaylistHomeScreen> {
                             subtitle: playlist.description,
                           ),
                           onTap: () => GoRouter.of(context)
-                              .go('/medical_record/${playlist.id}'),
+                              .go('/room_type/${playlist.id}'),
                         );
                       },
                     ),
@@ -68,7 +68,7 @@ class _PlaylistHomeScreenState extends State<PlaylistHomeScreen> {
                 hasScrollBody: false,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
+                  children: const [
                     PageFooter(),
                   ],
                 ),

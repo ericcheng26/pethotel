@@ -22,13 +22,8 @@ const List<NavigationDestination> destinations = [
     route: '/',
   ),
   NavigationDestination(
-    label: 'Medical record',
-    icon: Icon(Icons.playlist_add_check), // Modify this line
-    route: '/medical_record',
-  ),
-  NavigationDestination(
     label: 'RoomType',
-    icon: Icon(Icons.people), // Modify this line
+    icon: Icon(Icons.playlist_add_check), // Modify this line
     route: '/room_type',
   ),
 ];
@@ -63,9 +58,9 @@ final appRouter = GoRouter(
       ),
     ),
 
-    // MedicalRecordHomeScreen
+    // room_typeHomeScreen
     GoRoute(
-      path: '/medical_record',
+      path: '/room_type',
       pageBuilder: (context, state) => const MaterialPage<void>(
         key: _pageKey,
         child: RootLayout(
@@ -91,37 +86,7 @@ final appRouter = GoRouter(
       ],
     ),
 
-    // RoomTypeHomeScreen
-    GoRoute(
-      path: '/room_type',
-      pageBuilder: (context, state) => const MaterialPage<void>(
-        key: _pageKey,
-        child: RootLayout(
-          key: _scaffoldKey,
-          currentIndex: 2,
-          child: ArtistsScreen(),
-        ),
-      ),
-      routes: [
-        GoRoute(
-          path: ':aid',
-          pageBuilder: (context, state) => MaterialPage<void>(
-            key: state.pageKey,
-            child: RootLayout(
-              key: _scaffoldKey,
-              currentIndex: 2,
-              child: ArtistScreen(
-                artist: artistsProvider.getArtist(state.params['aid']!)!,
-              ),
-            ),
-          ),
-          // builder: (context, state) => ArtistScreen(
-          //   id: state.params['aid']!,
-          // ),
-        ),
-      ],
-    ),
-    for (final route in destinations.skip(3))
+    for (final route in destinations.skip(2))
       GoRoute(
         path: route.route,
         pageBuilder: (context, state) => MaterialPage<void>(
