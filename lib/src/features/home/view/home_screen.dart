@@ -43,8 +43,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     SingleChildScrollView(
                       child: Column(
-                        children: const [
-                          HomeHighlight(),
+                        children: [
+                          CarouselViewr(playlists: playlists),
                         ],
                       ),
                     ),
