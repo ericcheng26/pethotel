@@ -3,7 +3,7 @@
   "short_name": "pet_hotel",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "##d3d7db",
+  "background_color": "#2196f3",
   "theme_color": "#2196f3",
   "description": "A new Flutter project.",
   "orientation": "portrait-primary",
