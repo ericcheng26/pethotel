@@ -11,24 +11,29 @@ class PageFooter extends StatefulWidget {
 class _PageFooterState extends State<PageFooter> {
   @override
   Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
     return Footer(
+      backgroundColor: Theme.of(context).brightness == Brightness.dark
+          ? colors.background
+          : null,
+      padding: const EdgeInsets.all(10),
       child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: <Widget>[
-            const Text(
+          children: const <Widget>[
+            Text(
               'Copyright ©2022, All Rights Reserved.',
               style: TextStyle(
-                  fontWeight: FontWeight.w300,
-                  fontSize: 12.0,
-                  color: Color(0xFF162A49)),
+                fontWeight: FontWeight.w300,
+                fontSize: 12.0,
+              ),
             ),
-            const Text(
+            Text(
               'Powered by XMoon',
               style: TextStyle(
-                  fontWeight: FontWeight.w300,
-                  fontSize: 12.0,
-                  color: Color(0xFF162A49)),
+                fontWeight: FontWeight.w300,
+                fontSize: 12.0,
+              ),
             ),
           ]),
     );

@@ -16,8 +16,6 @@ jobs:
         with:
           targetBranch: exp-gh-pages
           channel: 'stable'
-          
-          architecture: x64 # optional, x64 or arm64
-      - run: flutter --version      
-      - run: flutter pub get
+
+
       - run: flutter build web

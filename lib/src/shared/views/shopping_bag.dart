@@ -15,15 +15,19 @@ class _ShoppingBagState extends State<ShoppingBag> {
 
   @override
   Widget build(BuildContext context) {
-    return Badge(
-      position: BadgePosition.topEnd(top: 13, end: -3),
-      animationDuration: Duration(milliseconds: 300),
-      animationType: BadgeAnimationType.slide,
-      badgeContent: Text(
-        _counter.toString(),
-        style: TextStyle(color: Colors.white),
+    return Padding(
+      padding: const EdgeInsets.all(2.0),
+      child: Badge(
+        position: BadgePosition.topEnd(top: 13, end: -3),
+        animationDuration: const Duration(milliseconds: 300),
+        animationType: BadgeAnimationType.slide,
+        badgeContent: Text(
+          _counter.toString(),
+          style: const TextStyle(color: Colors.white),
+        ),
+        child: IconButton(
+            icon: const Icon(CupertinoIcons.paw_solid), onPressed: () {}),
       ),
-      child: IconButton(icon: Icon(CupertinoIcons.paw_solid), onPressed: () {}),
     );
   }
 }

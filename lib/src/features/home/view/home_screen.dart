@@ -5,7 +5,6 @@ import '../../../shared/classes/classes.dart';
 import '../../../shared/extensions.dart';
 import '../../../shared/providers/providers.dart';
 import '../../../shared/views/views.dart';
-import '../../playlists/view/playlist_songs.dart';
 import 'view.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -20,28 +19,22 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     final PlaylistsProvider playlistProvider = PlaylistsProvider();
     final List<Playlist> playlists = playlistProvider.playlists;
-    final Playlist topSongs = playlistProvider.topSongs;
-    final Playlist newReleases = playlistProvider.newReleases;
-    final ArtistsProvider artistsProvider = ArtistsProvider();
-    final List<Artist> artists = artistsProvider.artists;
     return LayoutBuilder(
       builder: (context, constraints) {
         // Add conditional mobile layout
         if (constraints.isMobile) {
           return DefaultTabController(
-            length: 4,
+            length: 2,
             child: Scaffold(
               appBar: AppBar(
                 centerTitle: false,
                 title: const Text('Petinental Hotel'),
-                actions: const [BrightnessToggle()],
+                actions: const [ShoppingBag(), BrightnessToggle()],
                 bottom: const TabBar(
                   isScrollable: true,
                   tabs: [
                     Tab(text: 'Home'),
                     Tab(text: 'Recently Booked'),
-                    Tab(text: 'New Style'),
-                    Tab(text: 'Top Trend'),
                   ],
                 ),
               ),
@@ -50,26 +43,14 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     SingleChildScrollView(
                       child: Column(
-                        children: [
-                          const HomeHighlight(),
-                          HomeArtists(
-                            artists: artists,
-                            constraints: constraints,
-                          ),
+                        children: const [
+                          HomeHighlight(),
                         ],
                       ),
                     ),
                     HomeRecent(
                       playlists: playlists,
                       axis: Axis.vertical,
-                    ),
-                    PlaylistSongs(
-                      playlist: topSongs,
-                      constraints: constraints,
-                    ),
-                    PlaylistSongs(
-                      playlist: newReleases,
-                      constraints: constraints,
                     ),
                   ],
                 ),
@@ -192,7 +173,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),*/
                 ],
               ),
-              const PageFooter()
+              AdaptiveContainer(child: const PageFooter())
             ]),
           ),
         );
