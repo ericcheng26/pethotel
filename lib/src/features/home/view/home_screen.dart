@@ -74,7 +74,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         children: [
                           Expanded(
                             child: Text(
-                              'Petinental Hotel ',
+                              'Petinental Hotel',
                               style: context.displaySmall,
                             ),
                           ),
